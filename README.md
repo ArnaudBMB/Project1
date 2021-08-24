@@ -71,6 +71,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 Machines within the network can only be accessed by the Jumpbox.
 
 •	Public IP: 52.224.184.235
+
 •	Private IP: 10.0.1.4
  
 A summary of the access policies in place can be found in the table below.
