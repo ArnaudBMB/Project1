@@ -107,8 +107,11 @@ The following screenshot displays the result of running `docker ps` after succes
 This ELK server is configured to monitor the following machines:
 
 •	10.0.1.5
+
 •	10.0.1.6
+
 •	10.0.1.7
+
 •	10.1.0.4
 
 
@@ -117,8 +120,11 @@ We installed Filebeat and Metricbeat on Web-1, Web-2, Web-3.
 
 These Beats allow us to collect the following information from each machine:
 In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
-•	Filebeat collects system logs.
+•	Filebeat collects log files . They record and tail whoever logs onto the system,  keeping track of their every movement.
+
 •	Metricbeat collects metric logs such as CPU usage, memory and data logs.
+
+
 
 ### Using the Playbook
 
@@ -139,7 +145,6 @@ Both files should be copied in /etc/ansible
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
 The file to update on Ansible to run the playbook on a specific machine is the hosts. To specify you need to create different groups such as webservers and elk, to then know on which you're installing the ELK server or Metricbeat.
-
 
 - Which URL do you navigate to in order to check that the ELK server is running? 
 
