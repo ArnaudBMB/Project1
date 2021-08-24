@@ -5,7 +5,7 @@ Project 1 Cybersecurity Bootcamp Columbia
 
 The files in this repository were used to configure the network depicted below.
 
- (Images/redteam-diagram.png)
+ ![alt text](Images/redteam-diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -96,7 +96,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
- (Images/docker_output.png)
+ ![alt text](Images/docker_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
