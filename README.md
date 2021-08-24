@@ -5,7 +5,7 @@ Project 1 Cybersecurity Bootcamp Columbia
 
 The files in this repository were used to configure the network depicted below.
 
- ![RedTeam Diagram](https://user-images.githubusercontent.com/89435904/130558428-1746334d-0b93-4b82-9c4a-610341281383.png)
+ ![RedTeam Diagram](https://github.com/ArnaudBMB/Project1/blob/54f55abe2cfeb41e7c716e49f5addb2b667cefe3/Diagram/RedTeam%20Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
