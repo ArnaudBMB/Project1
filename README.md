@@ -95,9 +95,9 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 - Install Docker: Install Docker to the Jumpbox VM
 - Install Python3_pip to allow to install different dockers more easily in the future.
--Docker Module: Installs the docker component modules.
--Increase the memory and use more memory: This allows the ELK Docker Image to launch.
--Install ELK Container: Installs the ELK docker container and launches it with corrects ports.
+- Docker Module: Installs the docker component modules.
+- Increase the memory and use more memory: This allows the ELK Docker Image to launch.
+- Install ELK Container: Installs the ELK docker container and launches it with corrects ports.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
