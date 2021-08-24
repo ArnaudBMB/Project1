@@ -37,18 +37,18 @@ Load balancing ensures that the application will be highly available, in additio
 
 -What aspect of security do load balancers protect?
 Load balancers protect against DDoS attacks (Denial-of-Service) by allocating resources to the different systems.
--What is the advantage of a jump box?_
+-What is the advantage of a jump box?
 The advantages of a jump is that it is gateway for other systems and allows for easier and safer access to the those systems.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
 
--What does Filebeat watch for?_
+- What does Filebeat watch for?
 Filebeat watches and records system logs.
 
--What does Metricbeat record? 
+- What does Metricbeat record? 
 Metricbeat records metrics of your systems and resources and services running on these same systems..
 
--The configuration details of each machine may be found below.
+- The configuration details of each machine may be found below.
 
 | Name                 | Function      | IP Address | Operating System |
 |----------------------|---------------|------------|------------------|
