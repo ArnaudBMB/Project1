@@ -125,12 +125,15 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://40.75.122.15/5601/app/kibana to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
-- Which file is the playbook? Where do you copy it?_
+- Which file is the playbook? Where do you copy it?
 
+The file for the Elk Playbook is this:  https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/elk_install.yml
+The file for the Filebeat Playbook is:  https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/filebeat-playbook.yml
+Both files should be copied in /etc/ansible
 
 -Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
-The file to update on Ansible to run the playbook on a specific machine is the filebeat-config.yml. 
+The file to update on Ansible to run the playbook on a specific machine is the hosts. To specify you need to create different groups such as webservers and elk, to then know on which you're installing the ELK server or Metricbeat.
 
 
 - Which URL do you navigate to in order to check that the ELK server is running? 
@@ -140,7 +143,7 @@ http://[your.ELK-VM.External.IP]:5601/app/kibana
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-•	Command to download the playbook:
+•	Command to download the Elk playbook:
 
 curl https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/elk_install.yml > /etc/ansible/elk_install.yml
 
@@ -149,3 +152,22 @@ curl https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed67
 •	Run the playbook in /etc/ansible with ansible-playbook elk-install.yml
 
 •	Check Kibana to see if the install worked with the URL: http://[your.ELK-VM.External.IP]:5601/app/kibana
+
+Command to download the Filebeat playbook:
+
+curl https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/filebeat-playbook.yml > /etc/ansible/filebeat-playbook.yml
+
+•	Run the playbook in /etc/ansible with ansible-playbook filebeat-playbook.yml
+
+•	Check Kibana to see if the install worked with the URL: http://[your.ELK-VM.External.IP]:5601/app/kibana. Go to Add Log Data then System Logs.
+
+Command to download the Metricbeatplaybook:
+
+curl https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/metricbeat-playbook.yml > /etc/ansible/metricbeat-playbook.yml
+
+•	Run the playbook in /etc/ansible with ansible-playbook metricbeat-playbook.yml
+
+•	Check Kibana to see if the install worked with the URL: http://[your.ELK-VM.External.IP]:5601/app/kibana. Go to Add Metric Data then Dockers Metric.
+
+
+
