@@ -136,7 +136,7 @@ The file for the Elk Playbook is this:  https://github.com/ArnaudBMB/Project1/bl
 The file for the Filebeat Playbook is:  https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/filebeat-playbook.yml
 Both files should be copied in /etc/ansible
 
--Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
 The file to update on Ansible to run the playbook on a specific machine is the hosts. To specify you need to create different groups such as webservers and elk, to then know on which you're installing the ELK server or Metricbeat.
 
