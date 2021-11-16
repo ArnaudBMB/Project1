@@ -10,7 +10,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
 
-- ![Elk Install](Ansible/elk_install.yml)
+- ![ELK Install](Ansible/elk_install.yml)
 
 - ![Pentest](Ansible/pentest.yml)
 
@@ -21,7 +21,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -84,7 +84,7 @@ A summary of the access policies in place can be found in the table below.
 | ELK        | Yes - Kibana - 5601   | *                           |
 | ELK        | Yes - HTTP API - 9200 | 10.0.0.0/16                 |
 
-### Elk Configuration
+### ELK Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
@@ -131,14 +131,14 @@ In 1-2 sentences, explain what kind of data each beat collects, and provide 1 ex
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the elk_install.yml file to /ect/ansible.
+- Copy the elk_install.yml file to /etc/ansible.
 - Update the hosts file to include [elk] as well as the IP of the ELK Server
 - Run the playbook, and navigate to http://40.75.122.15/5601/app/kibana to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
 - Which file is the playbook? Where do you copy it?
 
-The file for the Elk Playbook is this:  https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/elk_install.yml
+The file for the ELK Playbook is this:  https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/elk_install.yml
 The file for the Filebeat Playbook is:  https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/filebeat-playbook.yml
 Both files should be copied in /etc/ansible
 
@@ -153,7 +153,7 @@ http://[your.ELK-VM.External.IP]:5601/app/kibana
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-•	Command to download the Elk playbook:
+•	Command to download the ELK playbook:
 
 curl https://github.com/ArnaudBMB/Project1/blob/db56e8dcbddb3b146ab0c4b43978ed675282fe40/Ansible/elk_install.yml > /etc/ansible/elk_install.yml
 
